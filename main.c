@@ -30,6 +30,7 @@ int main() {
   glfwMakeContextCurrent(window);
 
   while (!glfwWindowShouldClose(window)) {
+    glfwPollEvents();
   }
 
   glfwDestroyWindow(window);
